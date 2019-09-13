@@ -39,7 +39,7 @@ img {
     'linkedin'
     'footer';
   grid-gap: 15px;
-  background: linear-gradient(180deg, rgb(139, 107, 214), #60456E));
+  background: linear-gradient(180deg, rgb(139, 107, 214), #60456E);
   background-repeat: none;
   padding: 15px;
 }
