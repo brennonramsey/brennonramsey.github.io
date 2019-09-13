@@ -8,8 +8,8 @@ body {
 img {
   border-radius: 50%;
   width: 200px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 
 img:hover {
