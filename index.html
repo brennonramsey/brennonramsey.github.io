@@ -68,7 +68,7 @@ function googleTranslateElementInit() {
       <h1>Brennon Ramsey</h1>
       <h5>▪Graphic Designer ▪Linguist/Polyglot (WIP)</h5>
       <!--<h5>▪Hoʻolālā kiʻi ▪Nā papahana ▪Polyglot (WIP)</h5>-->
-      <h6>C2: American English | Learning: Warlpiri</h6>
+      <h6>C2: American English | Learning: <span id="changeText"></span></h6>
     </div>
   <!--Github-->
     <div class="item2">
@@ -107,16 +107,20 @@ function googleTranslateElementInit() {
     </div>-->
   </div>
   
-  <!--<script>
-  var close = document.getElementsByClassName("closebtn");
-var i;
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
+  <script>
+  var text = ["Wardaman", "Wukchumni", "Northern Yana", "Onge"];
+var counter = 0;
+var elem = document.getElementById("changeText");
+var inst = setInterval(change, 2000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
 }
-  </script>-->
+  </script>
 </body>
 </html>
